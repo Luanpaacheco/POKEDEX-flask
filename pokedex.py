@@ -20,7 +20,7 @@ def buscar():
         result=result["front_default"]
         pokemon.foto=result
     except:
-        return "pokemon não encontrado"
+        return "pokemon não encontrado" 
     return render_template('index.html', 
     nome=pokemon.nome,
     foto=pokemon.foto                       
